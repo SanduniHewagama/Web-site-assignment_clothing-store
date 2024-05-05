@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <script src="./FAQ.js"></script>
+</head>
+<body>
+    <!--The navigation bar-->
+    <header>
+        <p id="logo">BELLA</p>
+        <div id="nav">
+                <ul class="navli">
+                    <li><a class="active" href="index.php">Home</a></li>
+                    <li><a href="dashboard.php">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.php">Log In</a></li>
+                    <li><a href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+        </div>
+        <div class="menub">
+            <i class="bx bx-menu" onclick="menuFunction"></i>
+        </div>
+    </header>
+
+    <!--Website body-->
+    <section>
+        <h2 class="FAQtitle">FAQs</h2>
+
+        <div class="faq">
+
+            <!--Question 01-->
+            <div class="question">
+                <h3>What is your return policy?</h3>
+
+                <svg width="42" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" />
+                </svg>
+                
+
+            </div>
+            <div class="answer">
+                <p>
+                    We want you to be completely satisfied with your purchase. If for any reason you're not happy with your order, you can return it within 30 days of receiving it for a full refund or exchange. Just make sure the items are unworn, unwashed, and in their original condition with tags attached. For more information, please visit our Returns & Exchanges page.
+            </div>
+
+            <!--Question 02-->
+            <div class="question">
+                <h3>How long will it take to receive my order?</h3>
+
+                <svg width="42" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" />
+                </svg>
+                
+
+            </div>
+            <div class="answer">
+                <p>
+                    Once your order is placed, it typically takes 1-2 business days for us to process and ship it. Shipping times vary depending on your location and the shipping method chosen at checkout. You can track your order's progress using the tracking number provided in your shipping confirmation email. 
+                </p>
+            </div>
+
+            <!--Question 03-->
+            <div class="question">
+                <h3>Do you offer international shipping?</h3>
+
+                <svg width="42" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" />
+                </svg>
+                
+
+            </div>
+            <div class="answer">
+                <p>
+                    Yes, we ship to most countries worldwide! International shipping rates and delivery times may vary depending on your location and the shipping method selected. Please note that customers are responsible for any customs duties or taxes imposed by their country's customs office.
+                </p>
+            </div>
+
+            <!--Question 04-->
+            <div class="question">
+                <h3>Do you restock items that are out of stock?</h3>
+
+                <svg width="42" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" />
+                </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    We do our best to restock popular items whenever possible. However, some items may be limited edition or seasonal and may not be restocked once they're sold out. To stay updated on restocks and new arrivals, we recommend signing up for our newsletter or following us on social media. 
+            </div>
+
+            <!--Question 05-->
+            <div class="question">
+                <h3>How can I contact customer support if I have a question or issue?</h3>
+
+                <svg width="42" height="25" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" />
+                </svg>
+                
+
+            </div>
+            <div class="answer">
+                <p>
+                    We're here to help! You can reach our customer support team via email at support@bella.com or through our online contact form. Our support hours are Monday through Friday, 9:00 AM to 5:00 PM (EST). We strive to respond to all inquiries within 24 hours. Additionally, you can check out our FAQ page for quick answers to common questions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--The footer section!-->
+    <footer>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p><strong>Address: </strong>322/5, Galle road, Colombo 3</p>
+            <p><strong>Phone: </strong>0112 895 404 / 0112 895 405</p>
+            <div class="follow">
+                <h3>follow Us</h3>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="about col">
+            <h3>About</h3>
+            <a href="about.html">About Us</a>
+            <a href="delivery.html">Delivery Information</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and Conditions</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        <div class="account col">
+            <h3>My Account</h3>
+            <a href="signup.php">Sign Up</a>
+            <a href="login.php">Log In</a>
+        </div>
+
+        <div class="pay col">
+            <h3>Secured Payment Gateaway</h3>
+            <img src="img/pay.png" alt="payment" width="20%">
+        </div>
+
+        <div id="copy">
+            <p>© 2022 All rights reserved</p>
+        </div>
+
+    </footer>   
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM loaded");
+    const faqs = document.querySelectorAll(".faq");
+
+    faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+            console.log("Clicked FAQ:", faq.textContent); // Log clicked FAQ text
+            // Toggle "active" class on the clicked FAQ item
+            faq.classList.toggle("active");
+
+            // Remove "active" class from other FAQ items
+            faqs.forEach((otherFaq) => {
+                if (otherFaq !== faq) {
+                    otherFaq.classList.remove("active");
+                }
+            });
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
