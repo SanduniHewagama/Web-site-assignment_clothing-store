@@ -15,7 +15,7 @@ This project is a simple online clothing ecommerce website built using PHP for s
 
 - **Backend**: PHP
 - **Frontend**: HTML, CSS, JavaScript
-- **Database**: MySQL (or your preferred database)
+- **Database**: MySQL 
 - **Other Tools**: Git (version control), Bootstrap (CSS framework), etc.
 
 ## Setup Instructions
